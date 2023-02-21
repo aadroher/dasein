@@ -1,0 +1,16 @@
+/Users/aadroher/.ghcup/ghc/9.2.5/lib/ghc-9.2.5/lib/x86_64-osx-ghc-9.2.5/rts-1.0.2/include/ghcversion.h:
+  hash: 0b01480d9e386cfc01bf5430e953ac8a8bb8de1a8e65ea4d8e19bce3c3718005
+/Users/aadroher/DevProjects/dasein/.stack-work/dist/x86_64-osx/Cabal-3.6.3.0/build/dasein-exe/autogen/Paths_dasein.hs:
+  hash: b57ef2565d1669cc5ba336a03852a1cc75a428f81a68e0c7d24b5d19413af6ae
+/Users/aadroher/DevProjects/dasein/.stack-work/dist/x86_64-osx/Cabal-3.6.3.0/build/dasein-exe/autogen/cabal_macros.h:
+  hash: 4c5ab88896ff9cc7a808dba302b4c4be174ea5fba6c66ef8d6435d14318bb582
+/Users/aadroher/DevProjects/dasein/CHANGELOG.md:
+  hash: 5ecce4e0693d1bed351b9692499dfb611687e85cf9123189bf9fd4da0ccd6714
+/Users/aadroher/DevProjects/dasein/README.md:
+  hash: 4069e1408fd087d896196c739ae3d8b6901185a0cf7df550f55e18624bcca9a9
+/Users/aadroher/DevProjects/dasein/app/Main.hs:
+  hash: 0e595ace5fad2c750ba941c562bf8a81b40e42db781cb5d546cb859c9a765458
+/Users/aadroher/DevProjects/dasein/dasein.cabal:
+  hash: 4e2b4a2b8f85f5bd46ab7d468fddcd8ef908cd4dda075a28d089a64a6781d284
+/Users/aadroher/DevProjects/dasein/package.yaml:
+  hash: ce648e42383f247be61dfc5e525628485c33b73eac79d9f1ebf2b502c0803614
