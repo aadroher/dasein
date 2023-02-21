@@ -2,8 +2,8 @@
 
 module Main (main) where
 
+import Dasein (startApp)
 import Dasein.Env (getEnv, getLogOptions)
-import Dasein.Server (startApp)
 import RIO
 
 main :: IO ()

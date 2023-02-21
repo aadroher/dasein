@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      Dasein
+      Dasein.Api
       Dasein.Env
       Dasein.Server
   other-modules:
