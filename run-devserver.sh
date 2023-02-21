@@ -1,0 +1,1 @@
+stack build --fast --exec "bash -c \"pkill dasein-exe; stack exec dasein-exe &\"" --file-watch

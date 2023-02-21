@@ -1,6 +1,14 @@
+{-# LANGUAGE NoImplicitPrelude #-}
+
 module Main (main) where
 
-import Lib
+import Dasein.Env (getEnv, getLogOptions)
+import Dasein.Server (startApp)
+import RIO
 
 main :: IO ()
-main = startApp
+main = do
+  lo <- getLogOptions
+  withLogFunc lo $ \lf -> do
+    env <- getEnv lf
+    runRIO env startApp

@@ -25,7 +25,8 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Dasein.Env
+      Dasein.Server
   other-modules:
       Paths_dasein
   hs-source-dirs:
@@ -34,6 +35,7 @@ library
   build-depends:
       aeson
     , base >=4.7 && <5
+    , rio
     , servant-server
     , wai
     , warp
@@ -50,6 +52,7 @@ executable dasein-exe
       aeson
     , base
     , dasein
+    , rio
     , servant-server
     , wai
     , warp
@@ -70,6 +73,7 @@ test-suite dasein-test
     , hspec
     , hspec-wai
     , hspec-wai-json
+    , rio
     , servant-server
     , wai
     , warp
