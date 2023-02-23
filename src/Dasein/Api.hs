@@ -14,9 +14,9 @@ import RIO
 import Servant
 
 data User = User
-  { userId :: UUID,
-    userFirstName :: Text,
-    userLastName :: Text
+  { userId :: !UUID,
+    userFirstName :: !Text,
+    userLastName :: !Text
   }
   deriving (Eq, Show)
 
