@@ -28,6 +28,7 @@ library
       Dasein
       Dasein.Api
       Dasein.Env
+      Dasein.Repositories
       Dasein.Server
   other-modules:
       Paths_dasein
@@ -37,8 +38,11 @@ library
   build-depends:
       aeson
     , base >=4.7 && <5
+    , postgresql-simple
     , rio
     , servant-server
+    , time
+    , uuid-types
     , wai
     , warp
   default-language: Haskell2010
@@ -54,8 +58,11 @@ executable dasein-exe
       aeson
     , base
     , dasein
+    , postgresql-simple
     , rio
     , servant-server
+    , time
+    , uuid-types
     , wai
     , warp
   default-language: Haskell2010
@@ -75,8 +82,11 @@ test-suite dasein-test
     , hspec
     , hspec-wai
     , hspec-wai-json
+    , postgresql-simple
     , rio
     , servant-server
+    , time
+    , uuid-types
     , wai
     , warp
   default-language: Haskell2010
