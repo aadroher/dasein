@@ -29,6 +29,7 @@ library
       Dasein.Api
       Dasein.Env
       Dasein.Repositories
+      Dasein.Schema
       Dasein.Server
   other-modules:
       Paths_dasein

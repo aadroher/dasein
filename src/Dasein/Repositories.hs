@@ -9,13 +9,12 @@ import Data.UUID.Types
 import Database.PostgreSQL.Simple
 import Database.PostgreSQL.Simple.FromRow
 import RIO
-import Prelude (print)
 
 data UserRecord = UserRecord
-  { userId :: UUID,
-    userFirstName :: Text,
-    userLastName :: Text,
-    createdAt :: UTCTime
+  { userId :: !UUID,
+    userFirstName :: !Text,
+    userLastName :: !Text,
+    createdAt :: !UTCTime
   }
   deriving (Eq, Show)
 

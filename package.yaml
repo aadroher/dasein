@@ -22,10 +22,15 @@ description: Please see the README on GitHub at <https://github.com/githubuser/d
 dependencies:
   - base >= 4.7 && < 5
   - aeson
-  - postgresql-simple
+  - persistent
+  - persistent-sqlite
+  - persistent-template
   - rio
   - servant-server
+  - text
   - time
+  - mtl
+  - lens
   - uuid-types
   - wai
   - warp

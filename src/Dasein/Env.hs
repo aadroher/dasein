@@ -36,10 +36,10 @@ instance HasProcessContext Env where
       envProcessContext
       (\env processContext -> env {envProcessContext = processContext})
 
-getLogOptions :: MonadIO m => m LogOptions
+getLogOptions :: (MonadIO m) => m LogOptions
 getLogOptions = logOptionsHandle stderr isVerbose
 
-getEnv :: MonadIO m => LogFunc -> m Env
+getEnv :: (MonadIO m) => LogFunc -> m Env
 getEnv lf = do
   pc <- mkDefaultProcessContext
   return
