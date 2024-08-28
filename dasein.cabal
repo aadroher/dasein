@@ -28,6 +28,7 @@ library
       Dasein
       Dasein.Api
       Dasein.Env
+      Dasein.Modules.Authentication.Application.SignIn.UseCase
       Dasein.Repositories
       Dasein.Server
   other-modules:
