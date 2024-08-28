@@ -2,10 +2,10 @@
 
 module Dasein.Server where
 
-import Dasein.Api
-import Dasein.Repositories
+import Dasein.Api (API, userFromRecord)
+import Dasein.Repositories (readUsers)
 import RIO
-import Servant
+import Servant (Server)
 
 server :: Server API
 server = do

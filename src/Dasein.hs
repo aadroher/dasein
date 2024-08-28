@@ -12,10 +12,11 @@ import Dasein.Api (api)
 import Dasein.Env (Env (..))
 import Dasein.Repositories (readUsers)
 import Dasein.Server (server)
-import Network.Wai
-import Network.Wai.Handler.Warp
+import Network.Wai (Application)
+import Network.Wai.Handler.Warp (run)
+import Network.Wai.Middleware.RequestLogger (logStdoutDev)
 import RIO
-import Servant
+import Servant (serve)
 
 startApp :: RIO Env ()
 startApp = do
@@ -26,4 +27,6 @@ startApp = do
   liftIO $ run port waiApp
 
 waiApp :: Application
-waiApp = serve api server
+waiApp = logStdoutDev mainApp
+  where
+    mainApp = serve api server
