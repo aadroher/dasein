@@ -27,21 +27,31 @@ library
   exposed-modules:
       Dasein
       Dasein.Api
+      Dasein.Core.Application.Buses
+      Dasein.Core.Application.Messages
       Dasein.Env
+      Dasein.Modules.Authentication.Application.SignIn.Command
+      Dasein.Modules.Authentication.Application.SignIn.CommandHandler
+      Dasein.Modules.Authentication.Application.SignIn.UseCase
       Dasein.Repositories
       Dasein.Server
   other-modules:
       Paths_dasein
   hs-source-dirs:
       src
+  default-extensions:
+      NoImplicitPrelude
+      OverloadedStrings
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       aeson
     , base >=4.7 && <5
+    , hashable
     , postgresql-simple
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra
@@ -59,10 +69,12 @@ executable dasein-exe
       aeson
     , base
     , dasein
+    , hashable
     , postgresql-simple
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra
@@ -81,6 +93,7 @@ test-suite dasein-test
       aeson
     , base
     , dasein
+    , hashable
     , hspec
     , hspec-wai
     , hspec-wai-json
@@ -88,6 +101,7 @@ test-suite dasein-test
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra

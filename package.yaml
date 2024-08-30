@@ -26,10 +26,12 @@ dependencies:
   - rio
   - servant-server
   - time
+  - uuid
   - uuid-types
   - wai
   - wai-extra
   - warp
+  - hashable
 
 ghc-options:
   - -Wall
@@ -44,6 +46,9 @@ ghc-options:
 
 library:
   source-dirs: src
+  default-extensions:
+    - NoImplicitPrelude
+    - OverloadedStrings
 
 executables:
   dasein-exe:
