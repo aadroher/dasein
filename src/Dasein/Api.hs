@@ -9,7 +9,7 @@ module Dasein.Api (API, User (..), api, userFromRecord) where
 import Dasein.Repositories
 import Data.Aeson hiding (Options)
 import Data.Aeson.TH hiding (Options)
-import Data.UUID.Types
+import Data.UUID.Types (UUID)
 import RIO
 import Servant
 

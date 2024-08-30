@@ -44,6 +44,9 @@ ghc-options:
 
 library:
   source-dirs: src
+  default-extensions:
+    - NoImplicitPrelude
+    - OverloadedStrings
 
 executables:
   dasein-exe:

@@ -4,7 +4,7 @@
 
 module Dasein.Repositories where
 
-import Data.Time
+import Data.Time (UTCTime)
 import Data.UUID.Types
 import Database.PostgreSQL.Simple
 import Database.PostgreSQL.Simple.FromRow
