@@ -1,8 +1,15 @@
-module Dasein.Modules.Authentication.Application.SignIn.Command where
+module Dasein.Modules.Authentication.Application.SignIn.Command
+  ( mkSignInCommand,
+    SignInCommandPayload (..),
+    SignInCommand,
+  )
+where
 
-import Data.Time (UTCTime)
-import Data.UUID.Types (UUID)
+import Dasein.Core.Application.Messages (Command, CommandKey (..), mkCommand)
 import RIO
+
+signInCommandKey :: CommandKey
+signInCommandKey = CommandKey "Authenticaton.Application.SignIn.Command"
 
 data SignInCommandPayload = SignInCommandPayload
   { email :: !Text,
@@ -10,9 +17,7 @@ data SignInCommandPayload = SignInCommandPayload
   }
   deriving (Eq, Show)
 
-data SignInCommand = SignInCommand
-  { id :: !UUID,
-    dispatchedAt :: !(Maybe UTCTime),
-    payload :: !SignInCommandPayload
-  }
-  deriving (Eq, Show)
+type SignInCommand = Command SignInCommandPayload
+
+mkSignInCommand :: SignInCommandPayload -> IO (Command SignInCommandPayload)
+mkSignInCommand = mkCommand signInCommandKey

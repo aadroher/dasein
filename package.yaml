@@ -26,10 +26,12 @@ dependencies:
   - rio
   - servant-server
   - time
+  - uuid
   - uuid-types
   - wai
   - wai-extra
   - warp
+  - hashable
 
 ghc-options:
   - -Wall

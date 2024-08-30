@@ -46,10 +46,12 @@ library
   build-depends:
       aeson
     , base >=4.7 && <5
+    , hashable
     , postgresql-simple
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra
@@ -67,10 +69,12 @@ executable dasein-exe
       aeson
     , base
     , dasein
+    , hashable
     , postgresql-simple
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra
@@ -89,6 +93,7 @@ test-suite dasein-test
       aeson
     , base
     , dasein
+    , hashable
     , hspec
     , hspec-wai
     , hspec-wai-json
@@ -96,6 +101,7 @@ test-suite dasein-test
     , rio
     , servant-server
     , time
+    , uuid
     , uuid-types
     , wai
     , wai-extra
