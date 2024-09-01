@@ -29,10 +29,13 @@ library
       Dasein.Api
       Dasein.Core.Application.Buses
       Dasein.Core.Application.Messages
+      Dasein.Core.Infrastructure.Repository
       Dasein.Env
+      Dasein.Modules.Authentication.Application.SignIn
       Dasein.Modules.Authentication.Application.SignIn.Command
       Dasein.Modules.Authentication.Application.SignIn.CommandHandler
       Dasein.Modules.Authentication.Application.SignIn.UseCase
+      Dasein.Modules.Authentication.Infrastructure.PostgresUserRepository
       Dasein.Repositories
       Dasein.Server
   other-modules:
