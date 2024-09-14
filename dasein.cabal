@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.1.
+-- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -32,9 +32,9 @@ library
       Dasein.Core.Infrastructure.Repository
       Dasein.Env
       Dasein.Modules.Authentication.Application.SignIn
-      Dasein.Modules.Authentication.Application.SignIn.Command
-      Dasein.Modules.Authentication.Application.SignIn.CommandHandler
-      Dasein.Modules.Authentication.Application.SignIn.UseCase
+      Dasein.Modules.Authentication.Application.SignUp.Command
+      Dasein.Modules.Authentication.Application.SignUp.CommandHandler
+      Dasein.Modules.Authentication.Application.SignUp.UseCase
       Dasein.Modules.Authentication.Infrastructure.PostgresUserRepository
       Dasein.Repositories
       Dasein.Server
